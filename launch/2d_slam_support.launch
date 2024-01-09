@@ -13,7 +13,7 @@
   <arg name="mapping_method" default="gmapping"/>
   <param name="odom/child_frame" value="base_footprint"/>
   <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
-    <param name="scan_height" value="10"/>
+    <param name="scan_height" value="60"/>   <!--updated param for detecting small ledges in ground-->
     <param name="output_frame_id" value="$(arg prefix)camera_depth_frame"/>
     <param name="range_min" value="0.45"/>
     <remap from="image" to="camera/depth/image_rect_raw"/>
