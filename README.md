@@ -53,14 +53,24 @@ Launch navigation (Nav2) together with SLAM (slam_toolbox).
 ```bash
 ros2 launch demo_slam 2d_slam.launch.py
 ```
+To run in namespace (`robot1`):
+```bash
+ros2 launch demo_slam 2d_slam.launch.py robot_namespace:=robot1
+```
 
-### 2.2. `rviz2_visualize_costmaps.launch.py`
+### 2.2. `2d_slam_display.launch.py`
 Launches RViz2 with a preconfigured layout for visualizing the robot's costmaps and state.
 
 **Usage:**
 ```bash
 ros2 launch demo_slam 2d_slam_display.launch.py
 ```
+
+To run in namespace (`robot1`):
+```bash
+ros2 launch demo_slam 2d_slam_display.launch.py robot_namespace:=robot1
+```
+
 
 ## **License**
 This project is licensed under the Apache 2.0 license - see the [LICENSE](LICENSE) file for more information.
