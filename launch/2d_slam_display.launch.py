@@ -11,7 +11,7 @@ def launch_setup(context, *args, **kwargs):
     namespace = LaunchConfiguration('namespace').perform(context)
     
     rviz_config_path = os.path.join(
-        get_package_share_directory('2d_slam'),
+        get_package_share_directory('demo_slam'),
         'config',
         'rviz2',
         'costmaps_visualization_robotont.rviz'
